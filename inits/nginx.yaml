@@ -1,0 +1,8 @@
+#cloud-config
+package_upgrade: true
+packages:
+  - nginx
+runcmd:
+  - echo '<h1>Homepage de Rodrigo Salvado - Server 2</h1>' | sudo tee /var/www/html/index.html > /dev/null
+  - sudo systemctl enable nginx
+  - sudo systemctl start nginx

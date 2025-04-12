@@ -4,6 +4,7 @@
 source ./config.sh
 
 init=./inits/apache.yaml
+zona=1
 
 # Criar IP público
 az network public-ip create \
@@ -81,7 +82,8 @@ az vm create \
   --admin-username $user \
   --ssh-key-values $sshKey \
   --custom-data $init \
-  --size Standard_B1s \
+  --size Standard_B1ms \
+  --zone $zona \
   --verbose
 
 
@@ -97,5 +99,6 @@ az vm create \
 #     --admin-password $password \
 #     --nsg-rule SSH \
 #     --custom-data $init \
-#     --size "Standard_B1s" \
+#     --size "Standard_B1ms" \
+#     --zone $zona
 #     --verbose

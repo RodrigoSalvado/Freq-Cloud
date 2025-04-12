@@ -3,7 +3,7 @@
 # Variáveis
 source ./config.sh
 
-init=./inits/cloud-init.yaml
+init=./inits/apache.yaml
 
 # Criar IP público
 az network public-ip create \
@@ -92,7 +92,7 @@ az vm create \
 #     --resource-group $resourceGroup \
 #     --location $location \
 #     --name $vmName \
-#     --image Canonical:UbuntuServer:24.04-LTS:latest \
+#     --image Ubuntu2204 \
 #     --admin-username $user \
 #     --admin-password $password \
 #     --nsg-rule SSH \

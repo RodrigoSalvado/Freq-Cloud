@@ -3,7 +3,7 @@
 # Variáveis
 source ./config.sh
 
-init=./inits/apache.yaml
+init=./inits/nginx.yaml
 zona=1
 
 # Criar IP público

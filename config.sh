@@ -1,7 +1,7 @@
 #config.sh
 
 resourceGroup=Freq
-location=uksouth  # Altera para a região desejada, ex: northeurope, francecentral, uksouth etc.
+location=uksouth # Altera para a região desejada, ex: northeurope, francecentral, uksouth etc.
 
 
 # variaveis para script da vm
